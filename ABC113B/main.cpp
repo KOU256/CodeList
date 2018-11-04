@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include<cmath>
+#include<math.h>
 
 int main(int argc, char **argv) {
     int n, t, a, ans, diff;
