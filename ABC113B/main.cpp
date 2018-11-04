@@ -2,28 +2,32 @@
 #include<vector>
 #include<math.h>
 
-int main(int argc, char **argv) {
-    int n, t, a, ans, diff;
-    std::vector<int> h;
+using namespace std;
 
-    std::cin >> n >> t >> a;
+int main(int argc, char **argv) {
+    int n, t, a, ans;
+    double diff;
+    vector<double> h;
+
+    cin >> n >> t >> a;
 
     for (int i = 0; i < n;i++) {
         int input;
-        std::cin >> input;
+        cin >> input;
         h.push_back(input);
         h[i] = t - h[i] * 0.006;
     }
 
-    diff = abs(a - h[0]);
+    diff = fabs((double)a - h[0]);
     ans = 1;
+
     for (int j = 0; j < n; j++) {
-        if (abs(a - h[j]) < diff) {
-            diff = abs(a - h[j]);
+        if (fabs((double)a - h[j]) < diff) {
+            diff = fabs((double)a - h[j]);
             ans = j + 1;
         }
     }
 
-    std::cout << ans << std::endl;
+    cout << ans << endl;
     return 0;
 }
