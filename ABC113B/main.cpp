@@ -2,17 +2,15 @@
 #include<vector>
 #include<cmath>
 
-using namespace std;
-
 int main(int argc, char **argv) {
     int n, t, a, ans, diff;
-    vector<int> h;
+    std::vector<int> h;
 
-    cin >> n >> t >> a;
+    std::cin >> n >> t >> a;
 
     for (int i = 0; i < n;i++) {
         int input;
-        cin >> input;
+        std::cin >> input;
         h.push_back(input);
         h[i] = t - h[i] * 0.006;
     }
@@ -26,6 +24,6 @@ int main(int argc, char **argv) {
         }
     }
 
-    cout << ans << endl;
+    std::cout << ans << std::endl;
     return 0;
 }
