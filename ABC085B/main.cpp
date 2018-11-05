@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
 
     for (int j = 0; j < d.size() - 1;) {
         if (d[j] == d[j + 1]) {
-            d.erase(d.begin() + j + 1);
+            d.erase(d.begin() + j);
         }
         else {
             j++;
