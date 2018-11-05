@@ -9,10 +9,9 @@ int main(int argc, char **argv) {
     vector<int> d;
 
     cin >> n;
+    d.resize(n);
     for (int i = 0; i < n; i++) {
-        int input;
-        cin >> input;
-        d.push_back(input);
+        cin >> d[i];
     }
 
     sort(d.begin(), d.end());
