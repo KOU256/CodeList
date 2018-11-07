@@ -13,8 +13,8 @@ int main(int argc, char **argv) {
     cin >> n >> y;
 
     for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= n; j++) {
-            for (int k = 0; k <= n; k++) {
+        for (int j = 0; i + j <= n; j++) {
+            for (int k = 0; i + j + k <= n; k++) {
                 if (i + j + k == n && i * X + j * Y + k * Z == y) {
                     count[0] = i;
                     count[1] = j;
