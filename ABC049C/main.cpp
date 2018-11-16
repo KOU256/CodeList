@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-#include<limits>
 
 #define DREAM_LENGTH 5
 #define DREAMER_LENGTH 7
@@ -9,21 +8,19 @@
 
 using namespace std;
 
-int main(int argc, char **argv){
+int main(int argc, char **argv) {
     string s;
 
     cin >> s;
 
-    while (s.length() >= DREAM_LENGTH) {
-        if (s.find("eraser") != string::npos)
-            s.erase(s.find("eraser"), ERASER_LENGTH);
-        else if (s.find("erase") != string::npos)
-            s.erase(s.find("erase"), ERASE_LENGTH);
-        else if (s.find("dreamer") != string::npos)
-            s.erase(s.find("dreamer"), DREAMER_LENGTH);
-        else if (s.find("dream") != string::npos)
-            s.erase(s.find("dream"), DREAM_LENGTH);
-    }
+    while (s.find("eraser") != string::npos)
+        s.erase(s.find("eraser"), ERASER_LENGTH);
+    while (s.find("erase") != string::npos)
+        s.erase(s.find("erase"), ERASE_LENGTH);
+    while (s.find("dreamer") != string::npos)
+        s.erase(s.find("dreamer"), DREAMER_LENGTH);
+    while (s.find("dream") != string::npos)
+        s.erase(s.find("dream"), DREAM_LENGTH);
 
     if (s.empty())
         cout << "YES" << endl;
