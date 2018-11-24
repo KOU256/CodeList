@@ -5,10 +5,10 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-    int n, mini, ans;
+    int n, ans;
     int sum = 0;
-    double ave;
-    vector<int> a;
+    double ave, mini;
+    vector<double> a;
 
     cin >> n;
     a.resize(n);
@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     mini = ave;
 
     for (int j = 0; j < n; j++) {
-        a[j] = abs(a[j] - ave);
+        a[j] = fabs(a[j] - ave);
         if (a[j] < mini) {
             ans = j;
             mini = a[j];
