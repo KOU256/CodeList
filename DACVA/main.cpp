@@ -8,7 +8,7 @@ int main(int argc, char **argv) {
     int n, mini, ans;
     int sum = 0;
     double ave;
-    vector<double> a;
+    vector<int> a;
 
     cin >> n;
     a.resize(n);
@@ -20,9 +20,10 @@ int main(int argc, char **argv) {
     mini = ave;
 
     for (int j = 0; j < n; j++) {
-        if ( abs(ave - a[j]) < mini) {
+        a[j] = abs(a[j] - ave);
+        if (a[j] < mini) {
             ans = j;
-            mini = abs(ave - a[j]);
+            mini = a[j];
         }
     }
 
