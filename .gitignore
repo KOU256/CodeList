@@ -32,5 +32,7 @@
 *.app
 
 .vscode/
+tests/
 *.code-workspace
 main
+*.acc.json
