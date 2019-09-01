@@ -3,6 +3,6 @@ project(CodeList)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ABC001A a.cpp)
-add_executable(ABC001B b.cpp)
-add_executable(ABC001C c.cpp)
+add_executable(A a.cpp)
+add_executable(B b.cpp)
+add_executable(C c.cpp)
