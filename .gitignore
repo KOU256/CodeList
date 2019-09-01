@@ -36,3 +36,6 @@ test/
 *.code-workspace
 main
 *.acc.json
+
+cmake-build-debug/
+.idea/
