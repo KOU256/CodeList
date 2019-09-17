@@ -3,5 +3,6 @@ project(CodeList)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(a ABC008/a.cpp)
-add_executable(b ABC008/b.cpp)
+add_executable(a ABC042/a.cpp)
+add_executable(b ABC042/b.cpp)
+add_executable(c ABC042/c.cpp)
