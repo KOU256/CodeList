@@ -3,10 +3,16 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-    int x, y;
+    int a, b;
 
-    cin >> x >> y;
+    cin >> a >> b;
 
-    cout << x + y / 2 << endl;
+    if (a * b % 2 == 0) {
+        cout << "Even" << endl;
+    }
+    else {
+        cout << "Odd" << endl;
+    }
+
     return 0;
 }
