@@ -22,5 +22,6 @@ int main(int argc, char **argv) {
     }
 
     cout << sum_total << endl;
+
     return 0;
 }
