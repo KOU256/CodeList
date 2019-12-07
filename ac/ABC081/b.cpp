@@ -1,32 +1,33 @@
 #include<iostream>
 #include<vector>
 
-using namespace std;
-
 int main(int argc, char **argv) {
-    int n;
-    int res = 500000000;
-    vector<int> a;
+    int n, input;
+    int count = 0;
+    std::vector<int> a;
 
-    cin >> n;
-    a.resize(n);
-    for (auto&& i : a) {
-        cin >> i;
+    std::cin >> n;
+    while(n > 0) {
+        std::cin >> input;
+        a.push_back(input);
+        n--;
     }
 
-    for (auto&& i : a) {
-        int count = 0;
-        while(i % 2 ==0) {
-            i /= 2;
+    for (int i = 0; i < a.size(); i++) {
+        if (a[i] % 2 == 0) {
+            a[i] /= 2;
+        }
+        else {
+            break;
+        }
+
+        if (i == a.size() - 1) {
+            i = 0;
             count++;
         }
-
-        if (res > count) {
-            res = count;
-        }
     }
 
-    cout << res << endl;
+    std::cout << count << std::endl;
 
     return 0;
 }
