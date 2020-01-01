@@ -42,4 +42,3 @@ main
 *.acc.json
 
 cmake-build-debug/
-.idea/
