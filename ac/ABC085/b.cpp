@@ -1,28 +1,24 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(int argc, char **argv) {
+typedef long long ll;
+
+#define FOR(index, init, max) for (int index = (init); index < (max); index++)
+#define REP(index, max) for (int index = 0; index < (max); index++)
+#define FOREACH(x, array) for (auto&& (x) : array)
+#define VECCIN(vec) for (auto&& vec_i : vec) cin >> vec_i
+#define VECCOUT(vec) for (const auto& vec_i : vec) cout << vec_i << endl
+
+int main() {
     int n;
-    vector<int> d;
-
     cin >> n;
-    d.resize(n);
-    for (int i = 0; i < n; i++) {
-        cin >> d[i];
-    }
 
-    sort(d.begin(), d.end());
-
-    for (int j = 0; j < d.size() - 1;) {
-        if (d[j] == d[j + 1]) {
-            d.erase(d.begin() + j);
-        }
-        else {
-            j++;
-        }
+    set<int> d;
+    REP(n_i, n) {
+        int tmp;
+        cin >> tmp;
+        d.insert(tmp);
     }
 
     cout << d.size() << endl;
