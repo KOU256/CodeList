@@ -6,14 +6,20 @@ public:
         int n;
         in >> n;
 
-        std::vector<int> a(n);
+        int min = 1000000, max = -1000000;
+        long sum = 0;
         for (int i = 0; i < n; i++) {
-            in >> a[i];
-        }
+            int tmp;
+            in >> tmp;
 
-        int min = *std::min_element(a.begin(), a.end());
-        int max = *std::max_element(a.begin(), a.end());
-        int sum = std::accumulate(a.begin(), a. end(), 0);
+            if (tmp < min) {
+                min = tmp;
+            }
+            if (tmp > max) {
+                max = tmp;
+            }
+            sum += tmp;
+        }
 
         out << min << ' ' << max << ' ' << sum << std::endl;
     }
