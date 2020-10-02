@@ -30,15 +30,9 @@
 *.exe
 *.out
 *.app
-a
-b
-c
-d
 
 .vscode/
-test/
+.idea/
+*cmake-build-debug/
 *.code-workspace
-main
-*.acc.json
-
-cmake-build-debug/
+*CMakeLists.txt
