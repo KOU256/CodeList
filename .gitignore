@@ -35,4 +35,4 @@
 .idea/
 *cmake-build-debug/
 *.code-workspace
-*CMakeLists.txt
+CMakeLists.txt
