@@ -1,4 +1,5 @@
 
-add_executable(a ABC086/a.cpp)
-add_executable(b ABC087/b.cpp)
-add_executable(c ABC085/c.cpp)
+message(${ABC_SOURCE_DIR})
+add_executable(a abc/abc086/a.cpp)
+add_executable(b abc/abc087/b.cpp)
+add_executable(c abc/abc085/c.cpp)
