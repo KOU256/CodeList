@@ -36,3 +36,4 @@
 *cmake-build-debug/
 *.code-workspace
 *.class
+kt/out/
