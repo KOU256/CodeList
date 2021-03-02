@@ -37,3 +37,4 @@
 *.code-workspace
 *.class
 kt/out/
+.DS_Store
